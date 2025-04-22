@@ -70,19 +70,45 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 82px;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
-    max-width: 1200px;
     border: 2px solid #fff;
     border-radius: 25px;
     padding: 50px;
 }
 
-.div-content-main {
+.div-content-title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 80%;
+}
+
+.div-content-title p {
+    text-align: center;
+}
+
+.div-content-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.div-content-images div {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-content-images img {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 25px;
 }
 
 .texto-1 {
@@ -133,6 +159,7 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 16px;
+    object-fit: cover;
 }
 
 .div-content-button a {
